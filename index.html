@@ -2,20 +2,22 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>AMIRATEX - Collecte • Tri • Export Textile International</title>
+    <title>
+      AMIRATEX – Achat de textiles usagés et vêtements d’occasion | Textiles de
+      seconde main (TLC)
+    </title>
 
     <meta
       name="description"
-      content="AMIRATEX est spécialisée dans la collecte, le tri et l’exportation internationale de textiles de seconde main."
+      content="AMIRATEX achète vos textiles en France : collecte originale, stock boutique, textiles écrémés et déstockage neuf. Enlèvement et logistique adaptés aux professionnels."
     />
-    <meta
-      name="keywords"
-      content="collecte textile, export textile, friperie, vêtements seconde main, fripe export, recyclage textile"
-    />
-    <meta name="author" content="AMIRATEX" />
-    <link rel="icon" href="images/amiratex_logo.webp" />
+
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,984 +26,1207 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <a class="skip-link" href="#main">Aller au contenu</a>
+    <!-- =========================
+     TOP BAR
+========================= -->
 
-    <div class="topbar" role="contentinfo" aria-label="Informations de contact">
-      <div class="container topbar-inner">
-        <div class="topbar-left">
-          <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
-            <path
-              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"
-            />
-          </svg>
-          <span class="address-text"
-            >Chemin de La Mouline 34440 Nissan Lez Enserune France</span
-          >
-        </div>
-        <div class="topbar-right">
-          <a href="tel:+33634234565" aria-label="Téléphone">
-            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
-              <path
-                d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.55.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.55 1 1 0 01-.24 1.01l-2.2 2.23z"
-              />
-            </svg>
-            +33 6 34 23 45 65
-          </a>
+    <div class="barre-haute">
+      <div class="conteneur barre-haute-contenu">
+        <span>🇫🇷 Achat de textiles partout en France et Europe</span>
 
-          <a href="mailto:contact@amiratex.com" aria-label="Email">
-            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
-              <path
-                d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-              />
-            </svg>
-            contact@amiratex.com
-          </a>
+        <div class="barre-haute-coordonnees">
+          <a href="tel:+33610119449">+33 6 10 11 94 49</a>
+          <a href="mailto:amiratexasso@gmail.com">amiratexasso@gmail.com</a>
         </div>
       </div>
     </div>
 
-    <!-- HEADER -->
+    <!-- =========================
+     HEADER
+========================= -->
 
-    <header>
-      <div class="container navbar">
-        <div class="logo">
-          <img src="images/amiratex_logo.webp" alt="AMIRATEX" loading="lazy" />
-        </div>
+    <header class="entete">
+      <div class="conteneur entete-contenu">
+        <a href="#accueil" class="logo">
+          <span>AMIRATEX</span>
+          <small>ACHAT TEXTILE DE SECONDE MAIN</small>
+        </a>
 
-        <nav class="nav-links" id="nav-links">
-          <a href="#home">Accueil</a>
-          <a href="#about">Société</a>
-          <a href="#nos-produits">Produits</a>
-          <a href="#process">Logistique</a>
-          <a href="#nos-produits">Catalogues</a>
-          <a href="#gallery">Galerie</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="language-switcher" aria-label="Choix de la langue">
-          <button type="button" class="lang-btn active" data-lang="fr">
-            FR
-          </button>
-          <button type="button" class="lang-btn" data-lang="en">
-            EN
-          </button>
-        </div>
-        <button
-          class="menu-toggle"
-          id="mobile-menu"
-          type="button"
-          aria-label="Ouvrir le menu"
-          aria-controls="nav-links"
-          aria-expanded="false"
-        >
+        <button class="bouton-menu" id="boutonMenu" aria-label="Ouvrir le menu">
           ☰
         </button>
+
+        <nav class="navigation-principale" id="navigationPrincipale">
+          <a href="#accueil">Accueil</a>
+          <a href="#achat">Nos achats</a>
+          <a href="#partenaires">Nos partenaires</a>
+          <a href="#fonctionnement">Fonctionnement</a>
+          <a href="#logistique">Logistique</a>
+          <a href="#contact" class="bouton-navigation"> Proposer vos textiles </a>
+        </nav>
       </div>
     </header>
 
-    <main id="main">
-      <!-- HERO -->
+    <!-- =========================
+     HERO
+========================= -->
 
-      <section class="hero" id="home">
-        <div class="hero-slider">
-          <div class="hero-slide active">
-            <img src="images/amiratex.webp" alt="" />
-            <div class="hero-overlay"></div>
-          </div>
+    <section class="accueil" id="accueil">
+      <div class="voile-accueil"></div>
 
-          <div class="hero-slide">
-            <img src="images/hero1.webp" alt="" />
-            <div class="hero-overlay"></div>
-          </div>
+      <div class="conteneur accueil-contenu">
+        <div class="accueil-texte">
+          <span class="accueil-libelle"> ACHAT DE TEXTILES PROFESSIONNEL </span>
 
-          <div class="hero-slide">
-            <img src="images/port1.webp" alt="" />
-            <div class="hero-overlay"></div>
-          </div>
-
-          <div class="hero-slide">
-            <img src="images/hero3.webp" alt="" />
-            <div class="hero-overlay"></div>
-          </div>
-        </div>
-
-        <div class="slider-buttons">
-          <button onclick="prevSlide()">❮</button>
-          <button onclick="nextSlide()">❯</button>
-        </div>
-
-        <div class="container hero-content">
-          <h1>AMIRATEX</h1>
-
-          <h2>COLLECTE • TRI • EXPORT TEXTILE INTERNATIONAL</h2>
+          <h1>
+            VOUS AVEZ DES TEXTILES ?
+            <strong>NOUS LES ACHETONS.</strong>
+          </h1>
 
           <p>
-            Votre partenaire professionnel pour le tri, la valorisation et
-            l’exportation de vêtements et textiles de seconde main.
+            AMIRATEX accompagne les associations, entreprises, boutiques,
+            ressourceries et professionnels dans la valorisation de leurs flux
+            textiles.
           </p>
 
-          <div class="buttons">
-            <a href="#nos-produits" class="btn btn-primary"
-              >Découvrir nos produits</a
-            >
-            <a href="#nos-produits" class="btn btn-secondary"
-              >Télécharger nos catalogues</a
-            >
+          <div class="accueil-boutons">
+            <a href="#contact" class="bouton bouton-principal">
+              Proposer vos textiles
+            </a>
+
+            <a href="#achat" class="bouton bouton-contour"> Découvrir nos achats </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="about">
-        <div class="container">
-          <div class="about-grid">
-            <!-- IMAGES -->
+    <!-- =========================
+     STATS
+========================= -->
 
-            <div class="about-images">
-              <div class="about-image-wrap">
-                <img
-                  src="images/collecte1.webp"
-                  alt="Collecte textile 1"
-                  loading="lazy"
-                />
-              </div>
+    <section class="statistiques">
+      <div class="conteneur grille-statistiques">
+        <div class="statistique">
+          <strong>25+</strong>
+          <span>ans d'expérience</span>
+        </div>
 
-              <div class="about-image-wrap">
-                <img
-                  src="images/collecte-de-textile.webp"
-                  alt="Collecte textile 2"
-                  loading="lazy"
-                />
-              </div>
-              <div class="about-image-wrap">
-                <img
-                  src="images/collecte_conteneur.webp"
-                  alt="Collecte textile 3"
-                  loading="lazy"
-                />
-              </div>
-              <div class="about-image-wrap">
-                <img
-                  src="images/collecte_conteneur2.webp"
-                  alt="Collecte textile 4"
-                  loading="lazy"
-                />
-              </div>
-            </div>
+        <div class="statistique">
+          <strong>6 000 T+</strong>
+          <span>de textiles traités / an</span>
+        </div>
 
-            <!-- TEXTE -->
+        <div class="statistique">
+          <strong>FRANCE</strong>
+          <span>enlèvements professionnels</span>
+        </div>
 
-            <div class="about-text">
-              <h2>À PROPOS D'AMIRATEX</h2>
+        <div class="statistique">
+          <strong>B2B</strong>
+          <span>solutions adaptées aux professionnels</span>
+        </div>
+      </div>
+    </section>
 
-              <p>
-                <strong>AMIRATEX</strong> est spécialisée dans la collecte, le
-                tri et l'exportation de vêtements et textiles de seconde main
-                destinés aux marchés internationaux. Nous proposons des
-                solutions fiables et professionnelles répondant aux besoins des
-                grossistes, importateurs, distributeurs et revendeurs.
-              </p>
+    <!-- =========================
+     INTRO
+========================= -->
 
-              <p>
-                Gr�ce � un r�seau solide de partenaires et de fournisseurs, nous
-                s�lectionnons des textiles de qualit� r�pondant aux exigences
-                des grossistes, importateurs et professionnels du secteur.
-              </p>
+    <section class="section presentation">
+      <!-- TITRE DE LA SECTION -->
+      <div class="conteneur">
+        <h2>Achat de textiles de seconde main en France et en Europe</h2>
+      </div>
+      <div class="conteneur grille-presentation">
+        <div class="image-presentation">
+          <img
+            src="images/Appoint.webp"
+            alt="Textiles destinés à la reprise par AMIRATEX"
+            loading="lazy"
+          />
+        </div>
 
-              <h3>Notre présence en Europe</h3>
+        <div class="texte-presentation">
+          <span class="libelle-section"> NOTRE SOLUTION </span>
 
-              <p>
-                AMIRATEX s'appuie sur un vaste réseau de collecte et
-                d'approvisionnement en textiles originaux dans plusieurs pays
-                européens :
-              </p>
+          <h2>Une solution simple pour la reprise de vos flux textiles</h2>
 
           <p>
-            France • Belgique • Allemagne • Pays-Bas • Espagne • Portugal
+            La gestion des invendus et des surplus textiles après le processus
+            de tri représente un défi logistique et financier pour de nombreuses
+            structures.
           </p>
 
-              <h3>Notre engagement</h3>
+          <p>
+            AMIRATEX vous propose une solution de reprise adaptée à vos volumes
+            et à la nature de vos textiles, afin de transformer vos stocks
+            dormants en une véritable opportunité de valorisation.
+          </p>
 
-              <p>
-                Nous mettons l'accent sur la qualité, la transparence, la
-                réactivité et la satisfaction de nos clients afin de construire
-                des partenariats durables partout dans le monde.
-              </p>
+          <p>
+            <strong>
+              AMIRATEX achète des textiles usagés, vêtements d’occasion et
+              textiles de seconde main (TLC), auprès des associations,
+              entreprises, boutiques, ressourceries et professionnels.
+            </strong>
+          </p>
 
-              <p>
-                <strong
-                  >AMIRATEX, votre partenaire de confiance pour un
-                  approvisionnement textile durable, compétitif et de
-                  qualité.</strong
-                >
-              </p>
-
-              <a href="#contact" class="btn btn-primary"> En savoir plus </a>
-            </div>
-          </div>
+          <a href="#contact" class="lien-texte"> Nous proposer votre stock → </a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- SERVICES -->
+    <!-- =========================
+     NOS ACHATS
+========================= -->
 
-      <!-- ========================= -->
-      <!-- SERVICES PREMIUM -->
-      <!-- ========================= -->
+    <section class="section achats" id="achat">
+      <div class="conteneur">
+        <div class="titre-section">
+          <span class="libelle-section"> CE QUE NOUS ACHETONS </span>
 
-      <section class="services-section" id="process">
-        <div class="container">
-          <div class="section-title">
-            <span class="section-badge"> AMIRATEX EXPERTISE </span>
+          <h2>Nos principales catégories</h2>
 
-            <h2>
-              SOLUTIONS TEXTILES<br />
-              & LOGISTIQUES INTERNATIONALES
-            </h2>
+          <p>
+            Nous étudions différents types de flux textiles professionnels selon
+            leur nature, leur qualité et leur volume.
+          </p>
+        </div>
+
+        <div class="grille-achats">
+          <!-- ORIGINAL -->
+
+          <article class="carte-achat">
+            <div class="numero-carte">01</div>
+
+            <div class="icone-carte">♻</div>
+
+            <h3>L'Original</h3>
 
             <p>
-              Des solutions professionnelles haut de gamme pour la collecte, le
-              tri, le conditionnement et l’export textile international.
+              Collecte textile brute telle qu'elle est récupérée directement
+              dans les conteneurs ou lors des collectes en porte-à-porte.
+            </p>
+
+            <ul>
+              <li>Non trié</li>
+              <li>Non ouvert</li>
+              <li>Vêtements</li>
+              <li>Chaussures</li>
+              <li>Maroquinerie</li>
+            </ul>
+
+            <div class="volume">
+              Volume indicatif :
+              <strong>15 tonnes</strong>
+            </div>
+          </article>
+
+          <!-- STOCK BOUTIQUE -->
+
+          <article class="carte-achat mis-en-avant">
+            <div class="numero-carte">02</div>
+
+            <div class="icone-carte">★</div>
+
+            <span class="libelle-mis-en-avant"> QUALITÉ BOUTIQUE </span>
+
+            <h3>Stock Boutique</h3>
+
+            <p>
+              Textiles été ou hiver ayant déjà subi un processus de tri mais qui
+              n'ont pas encore été mis en rayon.
+            </p>
+
+            <ul>
+              <li>Textiles triés</li>
+              <li>Qualité boutique</li>
+              <li>Été / Hiver</li>
+              <li>Non mis en rayon</li>
+              <li>Stocks disponibles</li>
+            </ul>
+
+            <div class="volume">
+              Volume indicatif :
+              <strong>6 ou 12 tonnes</strong>
+            </div>
+          </article>
+
+          <!-- ECREME -->
+
+          <article class="carte-achat">
+            <div class="numero-carte">03</div>
+
+            <div class="icone-carte">↻</div>
+
+            <h3>Textiles Écrémés</h3>
+
+            <p>
+              Articles restants après un premier tri, ainsi que certains
+              invendus et retours boutiques ayant déjà été exposés en magasin.
+            </p>
+
+            <ul>
+              <li>Surplus résiduel</li>
+              <li>Second choix associatif</li>
+              <li>Invendus</li>
+              <li>Retours boutiques</li>
+              <li>Volumes importants</li>
+            </ul>
+
+            <div class="volume">
+              Volume indicatif :
+              <strong>15 tonnes</strong>
+            </div>
+          </article>
+
+          <!-- DESTOCKAGE NEUF -->
+
+          <article class="carte-achat">
+            <div class="numero-carte">04</div>
+
+            <div class="icone-carte">+</div>
+
+            <h3>Déstockage Neuf</h3>
+
+            <p>
+              Nous étudions également les opportunités de déstockage de textiles
+              neufs provenant de professionnels.
+            </p>
+
+            <ul>
+              <li>Articles neufs</li>
+              <li>Surplus de stock</li>
+              <li>Fins de séries</li>
+              <li>Déstockage professionnel</li>
+              <li>Lots importants</li>
+            </ul>
+
+            <div class="volume">
+              Volume :
+              <strong>À étudier</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     PARTENAIRES
+========================= -->
+
+    <section class="section partenaires" id="partenaires">
+      <div class="conteneur">
+        <div class="titre-section">
+          <span class="libelle-section"> NOS PARTENAIRES </span>
+
+          <h2>À qui s'adresse notre solution ?</h2>
+        </div>
+
+        <div class="grille-partenaires">
+          <div class="element-partenaire">
+            <div class="icone-partenaire">🏢</div>
+            <h3>Associations</h3>
+            <p>
+              Reprise de flux textiles issus de collectes et de vos activités.
             </p>
           </div>
 
-          <div class="combined-layout">
-            <div class="services-grid">
-              <!-- Collecte -->
+          <div class="element-partenaire">
+            <div class="icone-partenaire">🏬</div>
+            <h3>Boutiques</h3>
+            <p>Valorisation de vos stocks, invendus et retours textiles.</p>
+          </div>
 
-              <div class="service-card">
-                <img
-                  src="images/collecte-service.webp"
-                  alt="Collecte textile"
-                />
+          <div class="element-partenaire">
+            <div class="icone-partenaire">🔄</div>
+            <h3>Ressourceries</h3>
+            <p>Solutions pour vos surplus et volumes textiles disponibles.</p>
+          </div>
 
-                <div class="service-content">
-                  <h3>Collecte</h3>
-
-                  <p>
-                    Collecte de textiles à partir de conteneurs implantés dans
-                    différentes communes en France ainsi qu’auprès de sources
-                    partenaires professionnelles.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Tri -->
-
-              <div class="service-card">
-                <img src="images/tri7.webp" alt="Tri textile" />
-
-                <div class="service-content">
-                  <h3>Tri Rigoureux</h3>
-
-                  <p>
-                    Classification professionnelle des textiles selon les
-                    catégories, qualités et standards export.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Conditionnement -->
-
-              <div class="service-card">
-                <img
-                  src="images/conditionnement-service.webp"
-                  alt="Conditionnement textile"
-                />
-
-                <div class="service-content">
-                  <h3>Conditionnement</h3>
-
-                  <p>
-                    Préparation export professionnelle, mise en balles et
-                    optimisation logistique.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Export -->
-
-              <div class="service-card">
-                <img
-                  src="images/export-service.webp"
-                  alt="Export international"
-                />
-                <div class="service-content">
-                  <h3>Export International</h3>
-
-                  <p>
-                    Expéditions internationales fiables, rapides et sécurisées
-                    vers plusieurs pays.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="process-panel">
-              <div class="section-title">
-                <h2>UN PROCESSUS MAÎTRISÉ</h2>
-                <p>
-                  De la collecte à l’expédition internationale, chaque étape est
-                  contrôlée avec rigueur.
-                </p>
-              </div>
-
-              <div class="process-steps">
-                <div class="step">
-                  <h3>1. Collecte</h3>
-                  <p>Collecte organisée auprès de sources partenaires.</p>
-                </div>
-
-                <div class="step">
-                  <h3>2. Tri</h3>
-                  <p>Tri rigoureux selon les standards qualité.</p>
-                </div>
-
-                <div class="step">
-                  <h3>3. Conditionnement</h3>
-                  <p>Préparation des balles pour l’export.</p>
-                </div>
-
-                <div class="step">
-                  <h3>4. Expédition</h3>
-                  <p>Logistique internationale sécurisée.</p>
-                </div>
-              </div>
-
-              <div class="logistic-compact combined-logistic">
-                <h3>Solution Logistique Internationale</h3>
-
-                <p class="logistic-text">
-                  AMIRATEX collabore avec des transporteurs internationaux afin
-                  de garantir des expéditions rapides et fiables. Nous nous
-                  occupons de toutes les démarches de transport : chargement,
-                  documentation, logistique export et suivi des expéditions
-                  jusqu’à destination.
-                </p>
-
-                <div class="btn-group">
-                  <a href="#contact" class="btn btn-primary"
-                    >Demander une expédition</a
-                  >
-                  <a href="#nos-produits" class="btn btn-secondary"
-                    >Télécharger nos catalogues</a
-                  >
-                </div>
-              </div>
-            </div>
+          <div class="element-partenaire">
+            <div class="icone-partenaire">🚛</div>
+            <h3>Professionnels</h3>
+            <p>Étude de lots importants et organisation des enlèvements.</p>
           </div>
         </div>
-      </section>
-      <!-- Section Nos Produits -->
-      <section id="nos-produits">
-        <div class="container">
-          <div class="section-title">
-            <span class="section-badge">AMIRATEX PRODUITS</span>
-            <h2>NOS PRODUITS TEXTILES DESTINÉS À L’EXPORT</h2>
+      </div>
+    </section>
+
+    <!-- =========================
+     FONCTIONNEMENT
+========================= -->
+
+    <section class="section fonctionnement" id="fonctionnement">
+      <div class="conteneur">
+        <div class="titre-section">
+          <span class="libelle-section"> NOTRE PROCESSUS </span>
+
+          <h2>Comment ça fonctionne ?</h2>
+
+          <p>Une démarche simple en quatre étapes.</p>
+        </div>
+
+        <div class="etapes">
+          <div class="etape">
+            <span>01</span>
+
+            <h3>Vous nous contactez</h3>
+
             <p>
-              Découvrez notre sélection professionnelle de textiles et vêtements
-              destinés aux marchés internationaux.
+              Présentez-nous votre structure, la nature de vos textiles et les
+              volumes disponibles.
             </p>
           </div>
 
-          <!-- SLIDER -->
-          <div class="products-slider">
-            <!-- Texte explicatif -->
-            <p class="slider-hint">
-              <strong>Sélectionnez un produit</strong> pour consulter ses
-              détails et télécharger son catalogue spécifique.
+          <div class="etape">
+            <span>02</span>
+
+            <h3>Nous étudions votre lot</h3>
+
+            <p>
+              Nous analysons les informations transmises afin de déterminer les
+              conditions de reprise.
             </p>
-            <div class="products-slider-track">
-              <!-- === PREMIÈRE COPIE === -->
-              <a href="#card-1" class="mini-product">
-                <img src="images/creme.webp" alt="Crème Été" />
-                <span>Crème Été</span>
-              </a>
-              <a href="#card-2" class="mini-product">
-                <img src="images/balles1-.webp" alt="Crème Hiver" />
-                <span>Crème Hiver</span>
-              </a>
-              <a href="#card-3" class="mini-product">
-                <img src="images/tri-service.webp" alt="Grade A Été" />
-                <span>Grade A Été</span>
-              </a>
-              <a href="#card-4" class="mini-product">
-                <img src="images/balles_stock.webp" alt="Grade A Hiver" />
-                <span>Grade A Hiver</span>
-              </a>
-              <a href="#card-5" class="mini-product">
-                <img src="images/balles2.webp" alt="Grade B Été" />
-                <span>Grade B Été</span>
-              </a>
-              <a href="#card-6" class="mini-product">
-                <img src="images/balles4.webp" alt="Grade B Hiver" />
-                <span>Grade B Hiver</span>
-              </a>
-              <a href="#card-7" class="mini-product">
-                <img src="images/textile_original.webp" alt="Original 18T" />
-                <span>Original 18T</span>
-              </a>
-              <a href="#card-8" class="mini-product">
-                <img
-                  src="images/Chaussures-Triées-Sac-de-25-kg.webp"
-                  alt="Chaussures"
-                />
-                <span>Chaussures & Sacs</span>
-              </a>
-              <a href="#card-9" class="mini-product">
-                <img src="images/balles recyclage.webp" alt="Recyclage" />
-                <span>Matière Recyclage</span>
-              </a>
-
-              <!-- === DEUXIÈME COPIE (obligatoire pour l'effet infini) === -->
-              <a href="#card-1" class="mini-product">
-                <img src="images/creme.webp" alt="Crème Été" />
-                <span>Crème Été</span>
-              </a>
-              <a href="#card-2" class="mini-product">
-                <img src="images/balles1-.webp" alt="Crème Hiver" />
-                <span>Crème Hiver</span>
-              </a>
-              <a href="#card-3" class="mini-product">
-                <img src="images/tri-service.webp" alt="Grade A Été" />
-                <span>Grade A Été</span>
-              </a>
-              <a href="#card-4" class="mini-product">
-                <img src="images/balles_stock.webp" alt="Grade A Hiver" />
-                <span>Grade A Hiver</span>
-              </a>
-              <a href="#card-5" class="mini-product">
-                <img src="images/balles2.webp" alt="Grade B Été" />
-                <span>Grade B Été</span>
-              </a>
-              <a href="#card-6" class="mini-product">
-                <img src="images/balles4.webp" alt="Grade B Hiver" />
-                <span>Grade B Hiver</span>
-              </a>
-              <a href="#card-7" class="mini-product">
-                <img src="images/textile_original.webp" alt="Original 18T" />
-                <span>Original 18T</span>
-              </a>
-              <a href="#card-8" class="mini-product">
-                <img
-                  src="images/Chaussures-Triées-Sac-de-25-kg.webp"
-                  alt="Chaussures"
-                />
-                <span>Chaussures & Sacs</span>
-              </a>
-              <a href="#card-9" class="mini-product">
-                <img src="images/balles recyclage.webp" alt="Recyclage" />
-                <span>Matière Recyclage</span>
-              </a>
-            </div>
           </div>
 
-          <!-- BOUTON CATALOGUE -->
-          <div class="catalog-download-wrap">
-            <a
-              href="catalogues/catalogue_amiratex_complet.pdf"
-              class="btn btn-primary"
-              download
-              >Télécharger le catalogue complet</a
-            >
+          <div class="etape">
+            <span>03</span>
+
+            <h3>Nous définissons les modalités</h3>
+
+            <p>
+              Prix, volumes, conditionnement et organisation de l'enlèvement
+              sont définis ensemble.
+            </p>
           </div>
 
-          <!-- GRILLE PRODUITS (avec ID uniques) -->
-          <div class="product-grid">
-            <div class="product-card" id="card-1">
-              <img src="images/creme.webp" alt="Crème Été" />
-              <div class="product-content">
-                <h3>Crème Été</h3>
-                <p>Sélection premium été haute qualité.</p>
-                <a
-                  href="catalogues/CATALOGUE_CREME_ETE.pdf"
-                  class="download-btn"
-                  download
-                  >Télécharger</a
-                >
-              </div>
-            </div>
+          <div class="etape">
+            <span>04</span>
 
-            <div class="product-card" id="card-2">
-              <img src="images/balles1-.webp" alt="Crème Hiver" />
-              <div class="product-content">
-                <h3>Crème Hiver</h3>
-                <p>Articles hiver premium triés.</p>
-                <a
-                  href="catalogues/CATALOGUES_CREME_GRADEB.pdf"
-                  class="download-btn"
-                  download
-                  >Télécharger</a
-                >
-              </div>
-            </div>
+            <h3>Enlèvement</h3>
 
-            <div class="product-card" id="card-3">
-              <img src="images/tri-service.webp" alt="Grade A Été" />
-              <div class="product-content">
-                <h3>Grade A - Été</h3>
-                <p>Vêtements Grade A été pour export.</p>
-                <a
-                  href="catalogues/catalogue AMIRATEX.pdf"
-                  class="download-btn"
-                  download
-                  >Télécharger</a
-                >
-              </div>
-            </div>
+            <p>
+              La logistique est organisée directement avec votre site selon les
+              conditions convenues.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="product-card" id="card-4">
-              <img src="images/balles_stock.webp" alt="Grade A Hiver" />
-              <div class="product-content">
-                <h3>Grade A - Hiver</h3>
-                <p>Sélection hiver Grade A.</p>
-                <a
-                  href="catalogues/catalogue AMIRATEX.pdf"
-                  class="download-btn"
-                  download
-                  >Télécharger</a
-                >
-              </div>
-            </div>
+    <!-- =========================
+     LOGISTIQUE
+========================= -->
 
-            <div class="product-card hidden" id="card-5">
-              <img src="images/balles2.webp" alt="Grade B Été" />
-              <div class="product-content">
-                <h3>Grade B - Été</h3>
-                <p>Articles Grade B été pour export.</p>
-                <a
-                  href="catalogues/CATALOGUE_GRADE_B_ETE_GLOBAL.pdf"
-                  class="download-btn"
-                  download
-                  >Télécharger</a
-                >
-              </div>
-            </div>
+    <!-- =========================
+     ORGANISATION DES ENLÈVEMENTS
+========================= -->
 
-            <div class="product-card hidden" id="card-6">
-              <img src="images/balles4.webp" alt="Grade B Hiver" />
-              <div class="product-content">
-                <h3>Grade B - Hiver</h3>
-                <p>Produits hiver Grade B triés.</p>
-                <a
-                  href="catalogues/CATALOGUES_CREME_GRADEB.pdf"
-                  class="download-btn"
-                  download
-                  >Télécharger</a
-                >
-              </div>
-            </div>
+    <section class="section logistique" id="logistique">
+      <div class="conteneur">
+        <!-- TITRE DE LA SECTION -->
+        <div class="titre-section">
+          <span class="libelle-section"> LOGISTIQUE </span>
 
-            <div class="product-card hidden" id="card-7">
-              <img src="images/textile_original.webp" alt="Original 18T" />
-              <div class="product-content">
-                <h3>Original Camion 18T</h3>
-                <p>Original non trié, chargement complet.</p>
-                <a
-                  href="catalogues/catalogue_recyclage_original.pdf"
-                  class="download-btn"
-                  download
-                  >Télécharger</a
-                >
-              </div>
-            </div>
+          <h2>Organisation des enlèvements</h2>
 
-            <div class="product-card hidden" id="card-8">
+          <p>
+            Une organisation simple et précise pour faciliter la reprise de vos
+            textiles.
+          </p>
+        </div>
+
+        <!-- =========================
+             ÉTAPE 01
+        ========================= -->
+
+        <div class="etapes-logistiques">
+          <article class="etape-logistique">
+            <div class="numero-logistique">01</div>
+
+            <div class="contenu-logistique">
+              <span class="libelle-logistique"> PLANIFICATION </span>
+
+              <h3>Planification de l'enlèvement</h3>
+
+              <p>
+                L'enlèvement est déclenché lorsqu'un volume correspondant à un
+                <strong>conteneur 40 pieds High Cube</strong>
+                est atteint, soit environ
+                <strong>73 m³</strong>.
+              </p>
+
+              <ul>
+                <li>
+                  Le contact doit être effectué
+                  <strong>au plus tard le vendredi</strong>
+                  pour planifier un passage dans le courant de la semaine
+                  suivante.
+                </li>
+
+                <li>
+                  La date et l'heure de l'enlèvement sont convenues d'un commun
+                  accord selon les disponibilités respectives.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- =========================
+                 ÉTAPE 02
+            ========================= -->
+
+          <article class="etape-logistique">
+            <div class="numero-logistique">02</div>
+
+            <div class="contenu-logistique">
+              <span class="libelle-logistique"> JOUR DU CHARGEMENT </span>
+
+              <h3>Organisation le jour du chargement</h3>
+
+              <p>
+                Le transport et le chargement sont organisés selon des modalités
+                précises afin de garantir une opération rapide et efficace.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- =========================
+             INFORMATIONS CHARGEMENT
+        ========================= -->
+
+        <div class="grille-informations-logistiques">
+          <!-- TRANSPORT -->
+
+          <div class="information-logistique">
+            <div class="icone-information">🚛</div>
+
+            <h3>Transport</h3>
+
+            <p>
+              Notre transporteur se présente directement dans vos locaux le jour
+              du chargement.
+            </p>
+
+            <strong> 08h00 ou 13h00 </strong>
+          </div>
+
+          <!-- CONTENEUR -->
+
+          <div class="information-logistique">
+            <div class="icone-information">📦</div>
+
+            <h3>Conteneur</h3>
+
+            <p>
+              La société AMIRATEX ne fournit pas de conteneur. Les coûts
+              d'immobilisation des conteneurs étant particulièrement élevés.
+            </p>
+          </div>
+
+          <!-- MANUTENTION -->
+
+          <div class="information-logistique">
+            <div class="icone-information">👷</div>
+
+            <h3>Manutention</h3>
+
+            <p>
+              Le chargement est effectué par vos soins, avec vos propres moyens
+              humains et matériels.
+            </p>
+
+            <strong> Environ 3 à 4 heures </strong>
+          </div>
+
+          <!-- QUALITÉ -->
+
+          <div class="information-logistique avertissement">
+            <div class="icone-information">⚠️</div>
+
+            <h3>Qualité du chargement</h3>
+
+            <p>
+              Il est impératif de ne charger aucun vêtement
+              <strong>en vrac ou mouillé</strong>.
+            </p>
+
+            <strong> Textiles propres et correctement conditionnés </strong>
+          </div>
+        </div>
+
+        <!-- =========================
+             ÉTAPE 03
+        ========================= -->
+
+        <div class="etapes-logistiques etape-logistique-trois">
+          <article class="etape-logistique">
+            <div class="numero-logistique">03</div>
+
+            <div class="contenu-logistique">
+              <span class="libelle-logistique"> APRÈS CHARGEMENT </span>
+
+              <h3>Informations de suivi</h3>
+
+              <p>
+                Dès le départ du camion, merci de nous transmettre par e-mail
+                des photos parfaitement lisibles des éléments suivants :
+              </p>
+
+              <ul>
+                <li>
+                  Le
+                  <strong
+                    >marquage complet de la porte arrière du conteneur</strong
+                  >
+                  : numéro, type, poids, etc.
+                </li>
+
+                <li>
+                  Une <strong>vue du chargement</strong>, porte droite ouverte.
+                </li>
+
+                <li>
+                  Le <strong>numéro du plomb</strong> scellé sur le conteneur.
+                </li>
+
+                <li>
+                  Le <strong>bon de transport</strong> indiquant l'heure
+                  d'arrivée et l'heure de départ du chauffeur.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <!-- CONDITIONNEMENT ET VOLUMES -->
+        <div class="logistique-supplementaire">
+          <div class="carte-logistique-supplementaire">
+            <div class="image-logistique-supplementaire">
               <img
-                src="images/Chaussures-Triées-Sac-de-25-kg.webp"
-                alt="Chaussures"
+                src="images/chargement_original_small_bags.webp"
+                alt="Chargement en petits sacs"
               />
-              <div class="product-content">
-                <h3>Chaussures & Sacs</h3>
-                <p>Maroquinerie triée pour export.</p>
-                <a
-                  href="catalogues/catalogue_general.pdf"
-                  class="download-btn"
-                  download
-                  >Télécharger</a
-                >
-              </div>
             </div>
 
-            <div class="product-card hidden" id="card-9">
-              <img src="images/balles recyclage.webp" alt="Recyclage" />
-              <div class="product-content">
-                <h3>Matière Recyclage</h3>
-                <p>Laine, jeans, coton recyclables.</p>
-                <a
-                  href="catalogues/catalogue_recyclage_original.pdf"
-                  class="download-btn"
-                  download
-                  >Télécharger</a
-                >
-              </div>
+            <div class="contenu-logistique-supplementaire">
+              <span class="libelle-section">CONDITIONNEMENT</span>
+              <h3>Petits sacs</h3>
+              <p>
+                <strong>12 tonnes environ</strong> pour les petits sacs
+                d'Original ou de matière écrémée.
+              </p>
             </div>
           </div>
 
-          <div class="load-more-container">
-            <button class="btn-more" id="loadMoreBtn">Voir plus</button>
-          </div>
-        </div>
-      </section>
-      <!-- ========================= -->
-      <!-- GALLERY -->
-      <!-- ========================= -->
-
-      <section id="gallery">
-        <div class="container">
-          <div class="section-title">
-            <h2>GALERIE</h2>
-            <p>Découvrez nos installations et activités.</p>
-          </div>
-
-          <div class="gallery-grid">
-            <img
-              src="images/GRADE_B_ETE_40_PIEDS.webp"
-              alt="GRADE B ETE 40 PIEDS"
-              class="gallery-item"
-            />
-            <img
-              src="images/CREME-GRADE_A_ETE.webp"
-              alt="CREME GRADE A ETE"
-              class="gallery-item"
-            />
-            <img
-              src="images/entrepôt_ext.webp"
-              alt="ENTREPOTS VUE DE L'EXTERIEUR"
-              class="gallery-item"
-            />
-            <img
-              src="images/amiratex_vue_haut.webp"
-              alt="AMIRATEX VUE DU HAUT"
-              class="gallery-item"
-            />
-
-            <img
-              src="images/tri-service.webp"
-              alt="TRI-SERVICE"
-              class="gallery-item"
-            />
-            <img
-              src="images/espace_tri.webp"
-              alt="ESPACE DE TRI"
-              class="gallery-item"
-            />
-            <img
-              src="images/rummage_enfant.webp"
-              alt="RUMMAGE ENFANT"
-              class="gallery-item"
-            />
-            <img
-              src="images/couloir_stockage.webp"
-              alt="COULOIR DE STOCKAGE"
-              class="gallery-item"
-            />
-            <img
-              src="images/camion_big_bags.webp"
-              alt="CHARGEMENTS BIG BAGS"
-              class="gallery-item"
-            />
-            <img
-              src="images/logistique_2.webp"
-              alt="CHARGEMENT CONTENEUR"
-              class="gallery-item"
-            />
-            <img
-              src="images/balles_stock.webp"
-              alt="Balles de vêtements de seconde main prêtes pour l'export"
-              class="gallery-item"
-            />
-            <img
-              src="images/stock1.webp"
-              alt="Balles de vêtements de seconde main prêtes pour l'export"
-              class="gallery-item"
-            /><img
-              src="images/export_conteneurs.webp"
-              alt="CONTENEURS PRETS A L'EXPORT"
-              class="gallery-item"
-            />
-            <img
-              src="images/chargement_conteneur.webp"
-              alt="CHERGEMENTS DE CONTENEUR TEXTILES DE SECONDE MAIN"
-              class="gallery-item"
-            />
-
-            <video
-              controls
-              poster="images/chargement_conteneur.webp"
-              class="gallery-video"
-            >
-              <source src="videos/video_chargement.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-      </section>
-
-      <!-- STATS -->
-
-      <section class="stats">
-        <div class="container">
-          <div class="section-title">
-            <h2>AMIRATEX EN CHIFFRES</h2>
-          </div>
-
-          <div class="stats-grid">
-            <div class="stat-box">
-              <h3>6000+</h3>
-              <p>Tonnes traitées</p>
+          <div class="carte-logistique-supplementaire">
+            <div class="image-logistique-supplementaire">
+              <img
+                src="images/camion_big_bags.webp"
+                alt="Chargement en big bags"
+              />
             </div>
 
-            <div class="stat-box">
-              <h3>20+</h3>
-              <p>Pays desservis</p>
-            </div>
-
-            <div class="stat-box">
-              <h3>100+</h3>
-              <p>Partenaires professionnels</p>
-            </div>
-
-            <div class="stat-box">
-              <h3>300+</h3>
-              <p>Conteneurs exportés</p>
+            <div class="contenu-logistique-supplementaire">
+              <span class="libelle-section">CONDITIONNEMENT</span>
+              <h3>Big bags</h3>
+              <p>
+                <strong>18 tonnes</strong> pour l'Original conditionné en big
+                bags.
+              </p>
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- CONTACT -->
-
-      <section class="contact" id="contact">
-        <div class="container">
-          <div class="section-title">
-            <h2>CONTACTEZ-NOUS</h2>
-            <p>Notre équipe est disponible pour répondre à vos demandes.</p>
+        <!-- CONDITIONS COMPLÉMENTAIRES -->
+        <div class="conditions-logistiques">
+          <div class="condition-logistique">
+            <span class="icone-condition">✓</span>
+            <div>
+              <h3>Conteneurs séparés</h3>
+              <p>
+                L'Original et la matière écrémée sont chargés dans des
+                conteneurs séparés.
+              </p>
+            </div>
           </div>
 
-          <div class="contact-form">
-            <form id="contact-form" novalidate>
-              <div class="form-grid">
-                <div>
-                  <label for="name">Nom *</label>
-                  <input
-                    id="name"
-                    type="text"
-                    name="name"
-                    placeholder="Nom"
-                    required
-                    autocomplete="name"
-                  />
-                  <div
-                    class="form-error"
-                    id="error-name"
-                    aria-live="polite"
-                  ></div>
+          <div class="condition-logistique">
+            <span class="icone-condition">✓</span>
+            <div>
+              <h3>Sacs et conteneurs</h3>
+              <p>AMIRATEX ne fournit ni sacs ni conteneurs.</p>
+            </div>
+          </div>
+
+          <div class="condition-logistique">
+            <span class="icone-condition">✓</span>
+          </div>
+        </div>
+        <!-- =========================
+             RAPPEL FINAL
+        ========================= -->
+
+        <div class="avis-logistique">
+          <div class="notice-icon">✓</div>
+
+          <div>
+            <h3>À retenir avant et après l'enlèvement</h3>
+
+            <p>
+              Volume atteint → contact avant vendredi → rendez-vous confirmé →
+              transporteur présent à 08h00 ou 13h00 → chargement par vos équipes
+              en environ 3 à 4 heures → départ du camion → transmission des
+              photos et du bon de transport par e-mail.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     CONTACT / PROPOSER VOS TEXTILES
+========================= -->
+
+    <section class="section contact" id="contact">
+      <!-- =========================
+     TITRE DE LA SECTION CONTACT
+========================= -->
+      <div class="conteneur titre-section-contact">
+        <span class="libelle-section">CONTACT</span>
+
+        <h2>Proposer vos textiles à AMIRATEX</h2>
+
+        <p>
+          Vous avez un stock textile à vendre ? Contactez-nous pour étudier
+          votre lot.
+        </p>
+      </div>
+      <div class="conteneur grille-contact">
+        <!-- =========================
+             INFORMATIONS AMIRATEX
+        ========================= -->
+
+        <!-- =========================
+     COLONNE GAUCHE
+     PRÉSENTATION + CONTACT
+========================= -->
+        <div class="informations-contact colonne-contact">
+          <!-- =========================
+         1. PRÉSENTATION
+         EN HAUT À GAUCHE
+    ========================= -->
+
+          <div class="presentation-contact">
+            <!-- PHOTO -->
+            <div class="image-presentation-detail">
+              <img
+                src="images/chargement_original_smallbags.jpeg"
+                alt="Collecte et stock textile AMIRATEX"
+              />
+
+              <div class="titre-image-presentation">
+                <span>AMIRATEX</span>
+                <h3>Collecte et stock textiles</h3>
+              </div>
+            </div>
+
+            <!-- CONTENU -->
+            <div class="contenu-presentation-detail">
+              <span class="libelle-section"> AMIRATEX </span>
+
+              <h2>Une solution pour vos stocks textiles</h2>
+
+              <p>
+                Vous avez des textiles à vendre après tri, des surplus, des
+                invendus ou des stocks professionnels ?
+              </p>
+
+              <!-- AVANTAGES -->
+
+              <div class="liste-presentation">
+                <!-- 01 -->
+                <div class="element-presentation">
+                  <span class="icone-presentation"> ✓ </span>
+
+                  <div>
+                    <strong> Achat de textiles </strong>
+
+                    <p>
+                      Nous étudions différents types de stocks textiles
+                      professionnels.
+                    </p>
+                  </div>
                 </div>
 
-                <div>
-                  <label for="company">Société</label>
-                  <input
-                    id="company"
-                    type="text"
-                    name="company"
-                    placeholder="Société"
-                    autocomplete="organization"
-                  />
-                  <div
-                    class="form-error"
-                    id="error-company"
-                    aria-live="polite"
-                  ></div>
+                <!-- 02 -->
+                <div class="element-presentation">
+                  <span class="icone-presentation"> ✓ </span>
+
+                  <div>
+                    <strong> Enlèvements professionnels </strong>
+
+                    <p>
+                      Organisation des enlèvements selon les volumes
+                      disponibles.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- 03 -->
+                <div class="element-presentation">
+                  <span class="icone-presentation"> ✓ </span>
+
+                  <div>
+                    <strong> Volumes importants </strong>
+
+                    <p>
+                      Nous étudions les lots correspondant à nos conditions
+                      d'achat.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- 04 -->
+                <div class="element-presentation">
+                  <span class="icone-presentation"> ✓ </span>
+
+                  <div>
+                    <strong> Étude de votre lot </strong>
+
+                    <p>
+                      Envoyez-nous vos informations ainsi que les photos ou
+                      vidéos de votre stock.
+                    </p>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="form-grid">
+          <!-- =========================
+         2. INFORMATIONS CONTACT
+         EN BAS À GAUCHE
+    ========================= -->
+
+          <div class="coordonnees-bas">
+            <!-- TITRE -->
+
+            <div class="entete-coordonnees">
+              <span class="libelle-section"> CONTACT </span>
+
+              <h3>AMIRATEX FRANCE</h3>
+
+              <p>
+                Pour toute demande concernant la reprise de vos textiles, notre
+                équipe est à votre disposition.
+              </p>
+            </div>
+
+            <!-- COORDONNÉES -->
+
+            <div class="liste-coordonnees">
+              <!-- TÉLÉPHONE -->
+
+              <a href="tel:+33634234565" class="element-coordonnee">
+                <span class="icone-coordonnee"> 📞 </span>
+
                 <div>
-                  <label for="email">Email *</label>
-                  <input
-                    id="email"
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                    autocomplete="email"
-                  />
-                  <div
-                    class="form-error"
-                    id="error-email"
-                    aria-live="polite"
-                  ></div>
+                  <strong> Téléphone </strong>
+
+                  <span> +33 6 34 23 45 65 </span>
                 </div>
+              </a>
+
+              <!-- EMAIL -->
+
+              <a
+                href="mailto:habib-frip@hotmail.fr"
+                class="element-coordonnee"
+              >
+                <span class="icone-coordonnee"> ✉ </span>
 
                 <div>
-                  <label for="phone">Téléphone / WhatsApp</label>
-                  <input
-                    id="phone"
-                    type="tel"
-                    name="phone"
-                    placeholder="Téléphone / WhatsApp"
-                    autocomplete="tel"
-                    pattern="[+0-9 ()-]{6,20}"
-                    maxlength="20"
-                  />
-                  <div
-                    class="form-error"
-                    id="error-phone"
-                    aria-live="polite"
-                  ></div>
+                  <strong> Email </strong>
+
+                  <span> habib-frip@hotmail.fr </span>
+                </div>
+              </a>
+
+              <!-- ADRESSE -->
+
+              <div class="element-coordonnee">
+                <span class="icone-coordonnee"> 📍 </span>
+
+                <div>
+                  <strong> Adresse </strong>
+
+                  <span>
+                    Chemin de la Mouline<br />
+                    34440 Nissan-Lez-Ensérune, France
+                  </span>
                 </div>
               </div>
+            </div>
 
-              <div class="visually-hidden" aria-hidden="true">
-                <label for="website">Website</label>
-                <input id="website" name="website" type="text" />
+            <!-- SIRET -->
+
+            <div class="informations-entreprise">
+              <span> SIRET </span>
+
+              <strong> 83127089700018 </strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+             FORMULAIRE
+        ========================= -->
+
+        <div class="bloc-formulaire-contact">
+          <form
+            name="demande-achat"
+            method="POST"
+            data-netlify="true"
+            enctype="multipart/form-data"
+            id="formulaireAchat"
+          >
+            <!-- NETLIFY -->
+
+            <input type="hidden" name="form-name" value="demande-achat" />
+
+            <!-- =========================
+                     NOM + SOCIÉTÉ
+                ========================= -->
+
+            <div class="ligne-formulaire">
+              <div class="groupe-champ">
+                <label for="name"> Nom et prénom * </label>
+
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  placeholder="Votre nom et prénom"
+                  required
+                />
               </div>
 
-              <label for="message">Message *</label>
+              <div class="groupe-champ">
+                <label for="company"> Société / Association * </label>
+
+                <input
+                  type="text"
+                  id="entreprise"
+                  name="societe"
+                  placeholder="Nom de votre société ou association"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- =========================
+                     EMAIL + TÉLÉPHONE
+                ========================= -->
+
+            <div class="ligne-formulaire">
+              <div class="groupe-champ">
+                <label for="email"> E-mail * </label>
+
+                <input
+                  type="email"
+                  id="courriel"
+                  name="email"
+                  placeholder="votre@email.com"
+                  required
+                />
+              </div>
+
+              <div class="groupe-champ">
+                <label for="phone"> Téléphone * </label>
+
+                <input
+                  type="tel"
+                  id="telephone"
+                  name="telephone"
+                  placeholder=" ..."
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- =========================
+                     TYPE DE STRUCTURE
+                ========================= -->
+
+            <div class="groupe-champ">
+              <label for="structure"> Type de structure * </label>
+
+              <select id="structure" name="type_structure" required>
+                <option value="">Sélectionnez votre structure</option>
+
+                <option value="Association">Association</option>
+
+                <option value="Boutique">Boutique</option>
+
+                <option value="Ressourcerie">Ressourcerie</option>
+
+                <option value="Entreprise">Entreprise</option>
+
+                <option value="Autre professionnel">Autre professionnel</option>
+              </select>
+            </div>
+
+            <!-- =========================
+                     TYPE DE TEXTILES
+                ========================= -->
+
+            <div class="groupe-champ">
+              <label> Type de textiles * </label>
+
+              <div class="grille-cases">
+                <label>
+                  <input type="checkbox" name="textiles" value="L'Original" />
+
+                  L'Original
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="textiles"
+                    value="Stock Boutique - Qualité Boutique"
+                  />
+
+                  Stock Boutique / Qualité Boutique
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="textiles"
+                    value="Textiles Écrémés"
+                  />
+
+                  Textiles Écrémés
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="textiles"
+                    value="Déstockage Neuf"
+                  />
+
+                  Déstockage Neuf
+                </label>
+              </div>
+            </div>
+
+            <!-- =========================
+                     QUANTITÉ + DÉPARTEMENT
+                ========================= -->
+
+            <div class="ligne-formulaire">
+              <div class="groupe-champ">
+                <label for="quantity"> Quantité estimée * </label>
+
+                <input
+                  type="text"
+                  id="quantite"
+                  name="quantite"
+                  placeholder="Ex. 6 tonnes, 12 tonnes, 15 tonnes..."
+                  required
+                />
+              </div>
+
+              <div class="groupe-champ">
+                <label for="department"> Département * </label>
+
+                <input
+                  type="text"
+                  id="departement"
+                  name="departement"
+                  placeholder="Ex. 34 - Hérault"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- =========================
+                     DESCRIPTION
+                ========================= -->
+
+            <div class="groupe-champ">
+              <label for="message"> Informations sur votre stock * </label>
+
               <textarea
                 id="message"
-                name="message"
-                placeholder="Votre message"
+                name="informations"
+                rows="5"
+                placeholder="Décrivez votre stock : type de textile, saison, conditionnement, quantité, localisation..."
                 required
               ></textarea>
-              <div
-                class="form-error"
-                id="error-message"
-                aria-live="polite"
-              ></div>
+            </div>
 
-              <button type="submit" class="btn btn-primary" id="contact-submit">
-                <span class="btn-text">Envoyer</span>
-                <span
-                  class="spinner is-hidden"
-                  id="form-spinner"
-                ></span>
-              </button>
+            <!-- =========================
+     PHOTOS + VIDÉOS DU STOCK
+========================= -->
 
-              <p id="form-message" role="status" aria-live="polite"></p>
-            </form>
-          </div>
+            <div class="groupe-champ">
+              <label for="media"> 📷 Photos / 🎥 Vidéos du stock </label>
+
+              <p class="aide-medias">
+                Vous pouvez ajouter plusieurs photos et vidéos pour nous
+                permettre d'évaluer votre stock.
+              </p>
+
+              <input
+                type="file"
+                id="medias"
+                name="photos-videos"
+                accept="image/jpeg,image/png,image/webp,video/mp4,video/quicktime"
+                multiple
+              />
+
+              <!-- LISTE DES FICHIERS SÉLECTIONNÉS -->
+
+              <div id="apercuMedias" class="apercu-medias"></div>
+
+              <small class="aide-fichier">
+                Formats acceptés : JPG, PNG, WEBP, MP4 et MOV. Vous pouvez
+                ajouter plusieurs fichiers.
+              </small>
+            </div>
+
+            <!-- =========================
+                     DISPONIBILITÉ
+                ========================= -->
+
+            <div class="groupe-champ">
+              <label for="availability"> Disponibilité du stock </label>
+
+              <select id="disponibilite" name="disponibilite">
+                <option value="">Sélectionnez une option</option>
+
+                <option value="Immédiatement">Immédiatement</option>
+
+                <option value="Dans les prochaines semaines">
+                  Dans les prochaines semaines
+                </option>
+
+                <option value="À définir">À définir</option>
+              </select>
+            </div>
+
+            <!-- =========================
+                     CONSENTEMENT
+                ========================= -->
+
+            <div class="consentement-formulaire">
+              <label class="case-consentement">
+                <input
+                  type="checkbox"
+                  name="accord-contact"
+                  value="Oui"
+                  required
+                />
+
+                <span>
+                  J'accepte qu'AMIRATEX me contacte concernant ma proposition de
+                  textiles. *
+                </span>
+              </label>
+            </div>
+
+            <!-- =========================
+                     BOUTON
+                ========================= -->
+
+            <button type="submit" class="bouton bouton-principal bouton-pleine-largeur">
+              Envoyer votre proposition
+            </button>
+
+            <!-- MESSAGE -->
+
+            <div id="messageFormulaire" class="message-formulaire" aria-live="polite"></div>
+          </form>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+    <!-- =========================
+     DESTINATION DES TEXTILES
+========================= -->
+    <div class="destination-textile">
+      <div class="contenu-destination-textile">
+        <span class="libelle-section">DESTINATION</span>
 
-    <!-- FOOTER -->
+        <h2>
+          Destination des textiles : centres de tri en Europe et à l’étranger
+        </h2>
 
-    <footer>
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-col">
-            <h3>AMIRATEX</h3>
-            <p>Collecte • Tri • Export Textile International.</p>
-          </div>
+        <p>
+          Les textiles collectés sont destinés à des centres de tri partenaires
+          en Europe et à l’étranger, où ils sont triés, valorisés et orientés
+          selon leur qualité et leur destination.
+        </p>
+      </div>
+    </div>
 
-          <div class="footer-col">
-            <h3>Navigation</h3>
-            <a href="#home">Accueil</a>
-            <a href="#about">Société</a>
-            <a href="#nos-produits">Produits</a>
-            <a href="#nos-produits">Catalogues</a>
-            <a href="#contact">Contact</a>
-          </div>
+    <!-- =========================
+     FOOTER
+========================= -->
 
-          <div class="footer-col">
-            <h3>Contact</h3>
-            <p>Chemin De La Mouline 34440 Nissan Lez Enserune - France</p>
-            <p>+33 6 34 23 45 65</p>
-            <p>amiratexasso@gmail.com</p>
-            <p>WhatsApp : +33 6 34 23 45 65</p>
-          </div>
+    <footer class="pied-page">
+      <div class="conteneur grille-pied">
+        <div>
+          <div class="logo-pied">AMIRATEX</div>
 
-          <div class="footer-col">
-            <h3>Réseaux sociaux</h3>
-            <a
-              href="https://www.facebook.com/amira.tex.12"
-              target="_blank"
-              rel="noopener"
-              aria-label="AMIRATEX sur Facebook"
-              >Facebook</a
-            >
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">TikTok</a>
-          </div>
+          <p>Achat et valorisation de textiles professionnels en France.</p>
         </div>
 
-        <div class="footer-bottom">© 2026 AMIRATEX — Tous droits réservés.</div>
+        <div>
+          <h4>Navigation</h4>
+
+          <a href="#accueil">Accueil</a>
+          <a href="#achat">Nos achats</a>
+          <a href="#fonctionnement">Fonctionnement</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+
+          <a href="tel:+33634234565"> +33 6 34 23 45 65 </a>
+
+          <a href="mailto:habib-frip@hotmail.fr"> habib-frip@hotmail.fr </a>
+        </div>
+
+        <div>
+          <h4>AMIRATEX FRANCE</h4>
+
+          <p>
+            Chemin de la Mouline<br />
+            34440 Nissan-Lez-Ensérune<br />
+            France
+          </p>
+
+          <p>SIRET : 83127089700018</p>
+        </div>
+      </div>
+
+      <div class="pied-bas">
+        © <span id="annee"></span> AMIRATEX FRANCE — Tous droits réservés.
       </div>
     </footer>
-
-    <!-- ===================== VUE DÉTAILLÉE PRODUIT ===================== -->
-    <div id="product-detail-view" class="product-detail-view">
-      <div class="detail-content">
-        <button class="detail-close" type="button" aria-label="Fermer">
-          &times;
-        </button>
-
-        <div class="detail-gallery-main">
-          <div class="gallery-track-main" id="gallery-track-main"></div>
-          <div class="gallery-dots-main" id="gallery-dots-main"></div>
-        </div>
-
-        <div class="detail-body">
-          <h1 id="detail-title"></h1>
-          <p class="desc" id="detail-desc"></p>
-          <div id="detail-content-extra"></div>
-
-          <a id="detail-download" href="#" class="btn btn-primary" download>
-            Télécharger le catalogue
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- ===================== FIN VUE DÉTAILLÉE ===================== -->
-
-    <!-- WHATSAPP -->
-
-    <a
-      href="https://wa.me/33634234565"
-      class="whatsapp"
-      aria-label="Contacter AMIRATEX sur WhatsApp"
-      >WA</a
-    >
-
-    <!-- ========================= -->
-    <!-- SCRIPT -->
-    <!-- ========================= -->
-
-    <!-- LIGHTBOX -->
-    <div
-      class="lightbox"
-      id="lightbox"
-      role="dialog"
-      aria-modal="true"
-      aria-label="Image agrandie"
-    >
-      <button class="close-lightbox" type="button" aria-label="Fermer">
-        &times;
-      </button>
-      <img class="lightbox-content" id="lightbox-img" alt="Image agrandie" />
-      <button
-        class="nav prev"
-        id="prev"
-        type="button"
-        aria-label="Image précédente"
-      >
-        &#10094;
-      </button>
-      <button
-        class="nav next"
-        id="next"
-        type="button"
-        aria-label="Image suivante"
-      >
-        &#10095;
-      </button>
-    </div>
-
-    <!-- EMAILJS -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>
