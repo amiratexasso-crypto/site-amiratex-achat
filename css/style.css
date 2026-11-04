@@ -241,7 +241,7 @@ select {
 
 .bouton-navigation {
 
-    background: var(--green);
+    background: blue;
 
     color: white;
 
@@ -867,7 +867,7 @@ padding-top: 80px;
 
     padding: 35px 25px;
 
-    border: 1px solid var(--border);
+    border: 3px solid var(--border);
 
     border-radius: 9px;
 
@@ -1879,8 +1879,10 @@ small {
     background: var(--white);
 
     padding: 30px 25px;
+    border: 3px solid var(--border);
 
-    border: 1px solid var(--border);
+    
+
     border-radius: 9px;
 
     transition: 0.3s ease;
@@ -1891,7 +1893,7 @@ small {
 
     transform: translateY(-4px);
 
-    box-shadow: 0 10px 25px rgba(20, 50, 40, 0.06);
+    box-shadow: 10px 10px 25px rgba(20, 50, 40, 0.06);
 }
 
 
