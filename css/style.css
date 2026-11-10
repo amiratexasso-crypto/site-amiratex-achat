@@ -612,6 +612,7 @@ padding-top: 80px;
     font-size: 1.55rem;
   }
 }
+
 .grille-presentation {
 
     display: grid;
@@ -687,7 +688,7 @@ padding-top: 80px;
 
     position: relative;
 
-    background: white;
+    background: lab(4.25% 22.79 -34.71);
 
     padding: 32px 25px;
 
@@ -696,6 +697,7 @@ padding-top: 80px;
     border-radius: 10px;
 
     transition: .35s;
+    color:white;
 
 }
 
@@ -776,7 +778,7 @@ padding-top: 80px;
 
     font-size: 21px;
 
-    color: var(--dark);
+    color: white;
 
     margin-bottom: 15px;
 
@@ -786,7 +788,7 @@ padding-top: 80px;
 
     font-size: 13px;
 
-    color: var(--muted);
+    color: whitesmoke;
 
     margin-bottom: 20px;
 
@@ -865,13 +867,14 @@ padding-top: 80px;
 
     text-align: center;
 
-    padding: 35px 25px;
+    padding: 35px 25px;  background: lab(4.25% 22.79 -34.71);
 
     border: 3px solid var(--border);
 
     border-radius: 9px;
 
     transition: .3s;
+    color:white;
 
 }
 
@@ -893,7 +896,7 @@ padding-top: 80px;
 
 .element-partenaire h3 {
 
-    color: var(--dark);
+    color: white;
 
     margin-bottom: 10px;
 
@@ -903,7 +906,7 @@ padding-top: 80px;
 
     font-size: 13px;
 
-    color: var(--muted);
+    color: whitesmoke;
 
 }
 
@@ -3347,4 +3350,41 @@ input[type="file"]:hover {
   .contenu-destination-textile p {
     font-size: 0.95rem;
   }
+}
+
+/* Statistiques : grille fluide et cartes lisibles sur petits écrans */
+.grille-statistiques {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 12px;
+}
+
+.statistique {
+    min-width: 0;
+    border-right: 0;
+    overflow-wrap: anywhere;
+}
+
+.statistique span {
+    display: block;
+    font-size: clamp(13px, 1.5vw, 18px);
+    line-height: 1.45;
+}
+
+@media (max-width: 500px) {
+    .statistiques {
+        padding-block: 22px;
+    }
+
+    .grille-statistiques {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .statistique {
+        padding: 14px 16px;
+    }
+
+    .statistique strong {
+        font-size: clamp(21px, 7vw, 27px);
+    }
 }
