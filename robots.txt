@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amiratex-achat.netlify.app/sitemap.xml

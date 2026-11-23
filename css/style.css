@@ -942,6 +942,7 @@ padding-top: 80px;
     grid-template-columns: repeat(4, 1fr);
 
     gap: 25px;
+    
 
 }
 
@@ -952,6 +953,7 @@ padding-top: 80px;
     border: 1px solid rgba(255,255,255,.13);
 
     border-radius: 8px;
+    background: blue;
 
 }
 
@@ -3352,7 +3354,7 @@ input[type="file"]:hover {
   }
 }
 
-/* Statistiques : grille fluide et cartes lisibles sur petits écrans */
+/* Statistiques : grille fluide et cartes lisibles sur petits ï¿½crans */
 .grille-statistiques {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
     gap: 12px;
